@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Parsons Festival</title>
+    </head>
+    <body>
+        <header>
+            <img src="./images/header2.png">
+        </header>
+        <main>
+            <div class="about"> 
+                <span class="image"><img src="./images/logo.svg"></span>is an annual series of events and exhibitions, highlighting graduating students’ work and achieve­ments across art, design, architecture, film, technology and more.
+            </div>
+            <div class="exhibition-container">
+
+                <!--Art and Design History and Theory-->
+                <div class="school adht--background">
+                    <div class="button" onclick="clicked(this)">
+                        <div class="school-name">Art and Design History and Theory</div>
+                        <div class="plus">+</div>
+                    </div>
+
+                    <div class="exhibition">
+                        <div class="department filter">
+                            <h4 class="department-name adht adht--active" id="fashionStudies" onclick="filter(this)">Fashion Studies</h4>
+                            <h4 class="department-name adht" id="curatorialStudies" onclick="filter(this)">History of Design and Curatorial Studies</h4>
+                        </div>
+
+                        <div class="program-container">
+                            <div class="program">
+                                <div class="img-container">
+                                    <h5>MA Fashion Studies</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Art, Media, and Technology-->
+                <div class="school amt--background">
+                    <div class="button" onclick="clicked(this)">
+                        <div class="school-name">Art, Media, and Technology</div>
+                        <div class="plus">+</div>
+                    </div>
+
+                    <div class="exhibition">
+                        <div class="department filter">
+                            <h4 class="department-name amt amt--active" id="communicationDesign" onclick="filter(this)">Communication Design</h4>
+                            <h4 class="department-name amt" id="dataVisualization" onclick="filter(this)">Data Visualization</h4>
+                            <h4 class="department-name amt" id="designAndTechnology" onclick="filter(this)">Design & Technology</h4>
+                            <h4 class="department-name amt" id="fineArts" onclick="filter(this)">Fine Arts</h4>
+                            <h4 class="department-name amt" id="illustration" onclick="filter(this)">Illustration</h4>
+                            <h4 class="department-name amt" id="photography" onclick="filter(this)">Photography</h4>
+                        </div>
+
+                        <div class="program-container">
+                            <div class="program">
+                                <div class="img-container">
+                                    <h5>AAS Communication Design</h5>
+                                </div>
+                            </div>
+
+                            <div class="program">
+                                <div class="img-container">
+                                    <h5>BFA Communication Design</h5>
+                                </div>
+                            </div>
+
+                            <div class="program margin-right--none">
+                                <div class="img-container">
+                                    <h5>MPS Communication Design</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Constructed Environments -->
+                <div class="school cone--background">
+                    <div class="button" onclick="clicked(this)">
+                        <div class="school-name">Constructed Environments</div>
+                        <div class="plus">+</div>
+                    </div>
+
+                    <div class="exhibition">
+                        <div class="department filter">
+                            <h4 class="department-name cone cone--active" id="architecture" onclick="filter(this)">Architecture</h4>
+                            <h4 class="department-name cone" id="architecturalDesign" onclick="filter(this)">Architectural Design</h4>
+                            <h4 class="department-name cone" id="industrialDesign" onclick="filter(this)">Industrial Design</h4>
+                            <h4 class="department-name cone" id="interiorDesign" onclick="filter(this)">Interior Design</h4>
+                            <h4 class="department-name cone" id="lightingDesign" onclick="filter(this)">Lighting Design</h4>
+                            <h4 class="department-name cone" id="productDesign" onclick="filter(this)">Product Design</h4>
+                        </div>
+
+                        <div class="program-container">
+                            <div class="program">
+                                <div class="img-container">
+                                    <h5>M.arch Architecture</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Design Strategies -->
+                <div class="school dess--background">
+                    <div class="button" onclick="clicked(this)">
+                        <div class="school-name">Design Strategies</div>
+                        <div class="plus">+</div>
+                    </div>
+
+                    <div class="exhibition">
+                        <div class="department filter">
+                            <h4 class="department-name dess dess--active" id="integratedDesign" onclick="filter(this)">Integrated Design</h4>
+                            <h4 class="department-name dess" id="strategicDesign" onclick="filter(this)">Strategic Design and Management</h4>
+                            <h4 class="department-name dess" id="transdisciplinaryDesign" onclick="filter(this)">Transdisciplinary Design</h4>
+                        </div>
+
+                        <div class="program-container">
+                            <div class="program">
+                                <div class="img-container">
+                                    <h5>BFA Integrated Design</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Fashion Design -->
+                <div class="school fash--background">
+                    <div class="button" onclick="clicked(this)">
+                        <div class="school-name">Fashion Design</div>
+                        <div class="plus">+</div>
+                    </div>
+
+                    <div class="exhibition">
+                        <div class="department filter">
+                            <h4 class="department-name fash fash--active" id="fashionDesign" onclick="filter(this)">Fashion Design</h4>
+                            <h4 class="department-name fash" id="fashionSociety" onclick="filter(this)">Fashion Design and Society</h4>
+                            <h4 class="department-name fash" id="fashionManagement" onclick="filter(this)">Fashion Management</h4>
+                            <h4 class="department-name fash" id="fashionMarketing" onclick="filter(this)">Fashion Marketing</h4>
+                            <h4 class="department-name fash" id="fashionCommunication" onclick="filter(this)">Fashion Marketing and Communication</h4>
+                            <h4 class="department-name fash" id="textiles" onclick="filter(this)">Textiles</h4>
+                        </div>
+
+                        <div class="program-container">
+                            <div class="program">
+                                <div class="img-container">
+                                    <h5>AAS Fashion Design</h5>
+                                </div>
+                            </div>
+
+                            <div class="program">
+                                <div class="img-container">
+                                    <h5>BFA Fashion Design</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Parsons Scholars -->
+                <div class="school schl--background">
+                    <div class="button" onclick="clicked(this)">
+                        <div class="school-name">Parsons Scholars</div>
+                        <div class="plus">+</div>
+                    </div>
+
+                    <div class="exhibition">
+                        <div class="department filter">
+                            <h4 class="department-name schl schl--active" id="parsonsScholars">Parsons Scholars</h4>
+                        </div>
+
+                        <div class="program-container">
+                            <div class="program">
+                                <div class="img-container">
+                                    <h5>Parsons Scholars</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="programs.js"></script>
+        <script type="text/javascript" src="test.js"></script>
+    </body>
+</html>

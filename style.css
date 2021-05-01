@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    background-color: white; 
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.8rem;
+    color: black;
+    background-size: contain;
+    font-weight: 300 !important;
+}
+
+header {
+    position: fixed;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 999999;
+}
+
+header img {
+    width: 100vw;
+}
+
+.about .image {
+    position: relative;
+    top: 1rem;
+    margin-right: 3rem;
+}
+
+.about img {
+    height: 10rem;
+}
+
+.about {
+    color: black;
+    position: absolute;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8rem;
+    font-weight: 300;
+    text-align: center;
+    hyphens: none;
+    z-index: 999;
+}
+
+.exhibition-container {
+    position: absolute;
+    top: 100vh;
+    /* margin: 2.5rem; */
+}
+
+.school {
+    padding: 0 5rem;
+    width: 100vw;
+    /* border-radius: 10rem; */
+    /* margin-bottom: 3rem; */
+    overflow: hidden;
+    height: 18rem;
+    /* transition: all 1s ease-in; */
+    color: black;
+}
+
+.school-name {
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    font-size: 6rem;
+    line-height: 18rem;
+    border: none;
+    width: calc(100vw - 15rem);
+    cursor: pointer;
+    user-select: none;
+}
+
+.plus {
+    font-size: 10rem;
+    font-weight: 200;
+    margin-top: -1rem;
+}
+
+.exhibition {
+    width: calc(100vw - 15rem);
+    padding-bottom: 7rem;
+}
+
+.department {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.department-name {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 400;
+    padding: 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    background-color: black;
+}
+
+.program-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* background-color: rosybrown; */
+}
+
+.program {
+    position: relative;
+    display: inline-block;
+    margin-right: 7rem;
+}
+
+.margin-right--none {
+    margin-right: 0;
+}
+
+.img-container {
+    height: 37rem;
+    width: 37rem;
+    border-color: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20rem;
+    padding: 2rem;
+}
+
+.img-container h5 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.caption {
+    left: 1.5rem;
+    position: absolute;
+    top: 47.5%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+.hover-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 3rem;
+}
+
+.hover-text h4 {
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 3.2rem;
+}
+
+.hover-text h5 {
+    font-weight: 300;
+    font-size: 2.6rem;
+}
+
+.adht--background {
+    /* background-color: white; */
+    background:#E69F54;
+}
+
+.adht--color {
+    color:black;
+}
+
+.adht--active {
+    color:black;
+    border-color: black;
+    background-color: white;
+}
+
+.amt--background {
+    background: #E2D58B;
+}
+
+.amt--color {
+    color: black;
+}
+
+.amt--active {
+    color:black;
+    border-color: black;
+    background-color: white;
+}
+
+.cone--background {
+    background-color: #8ED597;
+}
+
+.cone--color {
+    color: black;
+}
+
+.cone--active {
+    color:black;
+    border-color: black;
+    background-color: white;
+}
+
+.dess--background {
+    background-color: #8FD2D9;
+}
+
+.dess--color {
+    color: black;
+}
+
+.dess--active {
+    color:black;
+    border-color: black;
+    background-color: white;
+}
+
+.fash--background {
+    background-color: #C6B4D8;
+}
+
+.fash--color {
+    color: black;
+}
+
+.fash--active {
+    color:black;
+    border-color: black;
+    background-color: white;
+}
+
+.schl--background {
+    background-color: #E28B8B;
+}
+
+.schl--color {
+    color: black;
+}
+
+.schl--active {
+    color:black;
+    border-color: black;
+    background-color: white;
+}
+
+.commd_background {
+    background: url('images/bfa_commd.jpeg');
+    object-fit: contain;
+}
+
+.collapsed {
+    height: auto;
+    background: url('images/bfa_commd.jpeg') no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+}
